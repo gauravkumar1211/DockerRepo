@@ -1,0 +1,137 @@
+
+
+Shell Scripting COmmands :
+	pwd- present working dir
+	date
+	date +%D - 
+	date +%T
+	date +%H:%M
+	
+	ls - current dir folders
+	ls lt
+	ls ltr 
+
+cat - Read from file
+
+touch fileName - Create New FIle
+
+rm fileName - remove file from current dir
+
+vi filename - open file for editing on linux editor
+
+mkdir folderNAme - for creating new folder
+
+rmdir folderNAme
+
+rm -rf foldername
+
+cd / - go to root directory 
+
+cp source destination path
+or 
+cp file file_copy
+
+mv fileNAme newFIleName - for renaming file Name
+
+head -5 filename - first 5 line of file
+last -5 filename - last 5 line of file
+
+clear - clear terminal
+
+
+
+
+
+Creatting shell scripting file using 
+vi fileName.sh
+
+executing permission not requrired - bash filename.sh
+
+give file executing permission
+ls -ltr - to check permissions
+
+chmod +x filename.sh
+
+After giving permission - we can execute file in one more way
+./filename.sh
+
+
+COmments in shell scripting:
+
+Single line - #
+multi line-
+
+<<comment
+
+In between  data is commented now
+
+comment
+
+
+Variables in shell Scripting:
+
+1.varname = value
+
+2.varname = ${system_commands}
+we can put system_commands in currly braces and then the output of that commands will get store in variable
+eg - hostname=$(Hostname)
+
+3. readonly varname=value;
+Constant variable value
+
+
+Arrays in shell scripting:
+
+myArr=(1 2 "HEllo" Hi)
+
+Access -> echo "${myArr[0]}"
+
+All values in array access -> echo "${myArr[*]}"
+
+Find Length of Array -> echo "$#{myArr[*]}"
+
+Specific value Access -> echo "${myArr[*]:index from where:how many values}"
+
+
+Update array -> 
+myArr+=(hey 30 40)
+
+Array of key value pair ->
+
+declare -A myArr
+myArr=([key]=value)
+eg myArr=([name]=Rohan [age]=28)
+
+
+String:
+
+Converting into UpperCase and LowerCase
+ upper=${x^^}
+ lower case=${y,,}
+ 
+ 
+ Reading values from user
+ read varname
+ read -p "messge to display" varname
+ 
+ conditionals
+	
+if [[ $marks -gt 40 ]]
+then
+        echo "You are pass"
+else
+        echo "you are failed"
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
